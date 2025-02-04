@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background: #1e1e1e;
+  color: white;
+}
+.puppy-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.puppy-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  width: 220px;
+  background: #f4d35e;
+  border: 2px solid #ee964b;
+  border-radius: 8px;
+  font-family: "Fredoka", sans-serif;
+}
+.puppy-list:hover {
+  transform: scale(1.05);
+}
+.puppy-list p {
+  margin: 5px 0;
+  font-size: 16px;
+  text-align: center;
+}
+.a {
+  text-decoration: none;
+}
+.navbar,
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+}
+.form-container {
+  max-width: 400px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+.form-container h2 {
+  text-align: center;
+  color: #333;
+  padding-bottom: 5px;
+}
+.form-container h3 {
+  padding-bottom: 5px;
+}
+.form-container label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: border 0.3s ease-in-out;
+}
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #f4d35e;
+  outline: none;
+}
+.form-container button {
+  width: 100%;
+  background: #f4d35e;
+  border: none;
+  padding: 10px;
+  color: #333;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.form-container button:hover {
+  background: #ee964b;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    width: 90%;
+  }
+}
