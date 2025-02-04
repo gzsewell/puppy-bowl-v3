@@ -1,5 +1,5 @@
 import React from "react";
-import PuppyList from "../components/puppyList/puppyList";
+import PuppyList from "../components/PuppyList/PuppyList";
 
 function Puppies() {
   return (
