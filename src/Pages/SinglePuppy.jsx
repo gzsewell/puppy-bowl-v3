@@ -17,7 +17,7 @@ function SinglePuppy() {
       })
       .catch((err) => console.error(err));
   }, []);
-
+  //  --Delete Function--
   const deletePuppy = async () => {
     const confirmDelete = window.confirm(
       `Are you sure you want to delete ${puppyCard?.name}?`
@@ -35,6 +35,7 @@ function SinglePuppy() {
       console.error("Error deleting puppy:", error);
     }
   };
+
   return (
     <div className="puppy-list">
       <h3>Puppy Card for: {puppyCard?.name}</h3>
